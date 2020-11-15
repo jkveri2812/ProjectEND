@@ -74,6 +74,8 @@ def datos():
     global cantidad3
     i=0
     while i<3:
+        archivo_moneda=open('cantidadMoneda.txt','w')
+        archivo_moneda.close()
         archivo_moneda=open('cantidadMoneda.txt', 'r+')
         #Listas de cantidad y moneda:
         leerMoneda=archivo_moneda.readlines()
